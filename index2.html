@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <meta charset="UTF-8" />
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      function myFunction() {
+
+      
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        //console.log("clientHeight:"+document.documentElement.clientHeight);
+        //console.log("scrollHeight:"+document.documentElement.scrollHeight);
+
+        //console.log(height);
+      var scrolled = ((winScroll/ height) * 100);
+      console.log(scrolled + "%");
+      //document.getElementById("innerCircle").setAttribute("r",scrolled + "%");
+        
+      }
+
+    </script>
+  </head>
+  <body>
+
+    <!--
+    <div id = "web-header">
+      <span class="nav-button">Projects</span> <span class="nav-button">Experience</span>
+    </div>
+    <a href="#experience">Experience</a>-->
+    
+    <div style = "height:100%;justify-content: center;align-items: center;">
+    <p class="intro">Welcome to my portfolio</p>
+    <p class="intro">Scroll down to see more</p>
+    </div>
+
+    <div id ='red' class = "target-object" style = "background-color:rgba(255, 255, 255, 0.4);height: 100%;">
+  
+      <!--
+        <div class="title"><h1> AR realtime 8D audio mixing</h1></div>
+        
+        <div class='video'>
+          <iframe src="https://www.youtube.com/embed/5Hp349Jj6s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      
+        
+        <div id="footer">
+          <svg id = "bullet" expanded = "true" height = "100px" width = "500px" style="border: 1px red solid">
+    
+            <circle cx = "25%" cy = "50%" fill = "#ffffff"/>
+            <circle alt="Project1" cx = "50%" cy = "50%" fill = "#ffffff"/>
+            <circle alt="Experience" cx = "75%" cy = "50%" fill = "#ffffff"/>
+             </svg>
+        </div>
+      -->
+      
+    </div>
+
+    <div id ='blue' class = "target-object" style = "background-color:rgba(255, 255, 255, 0.4);height: 100%;">
+      <div class="title">
+        <h1> AR Solar System in the darkness</h1>
+      </div>
+  
+      <!--
+      <div class='video'>
+        <iframe  width="80vw" height="calc(80vw*100vh/100vw)" src="https://www.youtube.com/embed/XM0mxMvaV6Q?autoplay=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      -->
+    </div>
+
+    <a name="experience" />
+    <div id='experience' style="height:100%">
+      <h1 style="text-align:center;color:white">EXPERIENCE</h1>
+      <h2 id = 'job1-title' class='target-object'>Job 1</h2>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+
+      <h2 id = 'job2-title' class='target-object'>Job 2</h2>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+
+      <h2 id = 'job3-title' class='target-object'>Job 3</h2>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+    </div>
+
+    <!--  
+    <div id ='green' class = "target-object" style = "background-color: green;height: 90%;"></div>
+    <div id ='blue' class = "target-object" style = "background-color: blue;height: 90%;"></div>
+  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
