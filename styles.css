@@ -2,7 +2,7 @@
 body, html {
   scroll-behavior: smooth;
   margin: 0;
-  width: auto;
+  width: 100%;
   background-image: url(galaxy-2.png);
   background-color: black;
   background-repeat:repeat-y;
